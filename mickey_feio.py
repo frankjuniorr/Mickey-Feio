@@ -31,6 +31,7 @@ def download_from_instagram():
 # ============================================
 def delete_unused_files():
 	# Aqui ele deleta a lista de arquivos desnecessários
+	fileList = []
 	fileListTxt = glob.glob(hastag + "/*.txt")
 	fileListJson = glob.glob(hastag + "/*.json")
 
