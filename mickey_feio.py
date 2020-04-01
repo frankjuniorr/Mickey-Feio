@@ -11,6 +11,8 @@ from xopen import xopen
 now = datetime.datetime.now()
 hastag = "#mickeyfeio" + str(now.year)
 
+separador = os.path.sep
+
 # ============================================
 # Função que faz o donwload de todas as imagens
 # do instagram com a hastag
@@ -31,26 +33,24 @@ def download_from_instagram():
 # ============================================
 def delete_unused_files():
 	# Aqui ele deleta a lista de arquivos desnecessários
-	fileList = []
-	fileListTxt = glob.glob(hastag + "/*.txt")
-	fileListJson = glob.glob(hastag + "/*.json")
+	fileListTxt = glob.glob(hastag + separador + "*.txt")
+	fileListJson = glob.glob(hastag + separador + "*.json")
 
-	fileList.append(fileListTxt)
-	fileList.append(fileListJson)
+	fileList = fileListTxt + fileListJson
 
 	# Deleta todos os arquivos .txt e .json
 	for filePath in fileList:
 		try:
 				os.remove(filePath)
 		except:
-			print("Error while deleting file : ", filePath)
+			print("Error while deleting file: ", filePath)
 
 # ============================================
 # Função que extrai as informações do arquivo:
 # como o autor da foto, e o arquivo .xz referente
 # ============================================
 def extract_info():
-	fileListXz = glob.glob(hastag + "/*.xz")
+	fileListXz = glob.glob(hastag + separador + "*.xz")
 	dados_list = []
 
 	# itera em todos os arquivos .xz
