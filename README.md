@@ -2,7 +2,7 @@ Mickey Feio
 ===========
 
 ## Description:
-Script auxiliar para fazer o download de todas as imagens do Instagram do projeto "Mickey Feio" usando a hastag `#mickeyfeio2019`
+Script auxiliar para fazer o download de todas as imagens do Instagram do projeto ["Mickey Feio"](https://www.instagram.com/mickeyfeio/) usando a hastag `#mickeyfeio<ano>`
 
 ## Uso:
 ```bash
