@@ -1,2 +1,2 @@
-instaloader==4.3
+instaloader==4.7.2
 xopen==0.8.4

@@ -8,7 +8,3 @@ Script auxiliar para fazer o download de todas as imagens do Instagram do projet
 ```bash
 pip3 install -r requirements.txt
 python3 mickey_feio.py
-```
-
-## TODO:
-- [ ] Implementar também a funcionalidade de baixar as imagens do facebook
